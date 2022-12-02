@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import About from './components/Paginas/About/About';
+import Contactos from './components/Paginas/Contactos/Contactos';
+import BasicExample from './components/Navbar/Navbar'
+import Productos from './components/Paginas/Productos/Productos';
+import Pie from './components/Footer/Footer';
+import Lensometros from './components/Paginas/Productos/Lensometros/Lensometros';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<BasicExample />}>
+            {/* <Route index element={<* />} /> */}
+            <Route path='About' element={<About />} />
+            <Route path='Contactos' element={<Contactos />} />
+            <Route path='Productos' element={<Productos />} />
+            <Route path='Lensometros'element={<Lensometros/>}/>
+            <Route path='*' element={<Navigate replace to="/" />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+      {/* <Bodycard /> */}
+      <Pie/>
+
     </div>
   );
 }

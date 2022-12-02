@@ -1,0 +1,25 @@
+.formulario1{ margin: 1rem;
+padding: 1rem;
+display: flex;
+flex-direction: column;
+
+}
+textarea{
+    margin-top: 2rem;
+    height: 10rem;
+    border-color:rgb(235, 100, 64);
+}
+button{
+    margin-top: 1rem;
+
+    align-self: center;
+    
+}
+button:hover{
+    background-color: rgb(73, 113, 116)
+}
+input{
+    border-color:rgb(235, 100, 64);
+    border-width: 1px
+
+}

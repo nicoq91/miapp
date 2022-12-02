@@ -1,0 +1,27 @@
+.contenedorProductos {
+    background-color: rgb(239, 245, 245);
+    display: flex;
+    padding: 5rem;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    align-items: stretch;
+
+}
+
+.caja {
+    margin: 0.7rem;
+    padding: 0.8rem;
+    border-radius: 20px;
+    border-color: rgb(235, 100, 64);
+    border-style: solid;
+}
+.caja button{
+    background-color: rgb(73, 113, 116)
+    
+}
+.caja button:hover{
+    background-color:rgb(235, 100, 64);
+    
+}
+
