@@ -13,7 +13,7 @@ const Productos = () => {
     return (
         <>
             <div className='contenedorH1'>
-                <h1>PRODUCTOS</h1>
+              
             </div>
             <div className='contenedorProductos'>
                 {/* comentario 1er producto*/}
